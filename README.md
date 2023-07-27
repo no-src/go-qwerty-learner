@@ -1,6 +1,6 @@
 # go-qwerty-learner
 
-[![Build](https://img.shields.io/github/actions/workflow/status/no-src/go-qwerty-learner/go-qwerty-learner.yml?branch=main)](https://github.com/no-src/go-qwerty-learner/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/no-src/go-qwerty-learner/go.yml?branch=main)](https://github.com/no-src/go-qwerty-learner/actions)
 [![License](https://img.shields.io/github/license/no-src/go-qwerty-learner)](https://github.com/no-src/go-qwerty-learner/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/no-src/go-qwerty-learner)](https://github.com/no-src/go-qwerty-learner/releases)
 
