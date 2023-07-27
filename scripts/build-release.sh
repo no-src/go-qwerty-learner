@@ -30,14 +30,14 @@ export GOARCH=amd64
 go build -v -o . ./...
 
 export GO_QWERTY_LEARNER_RELEASE_GO_VERSION=$(go version | awk '{print $3}')
-export GO_QWERTY_LEARNER_RELEASE_VERSION=$(./gofs-webui -v | awk 'NR==1 {print $3}')
+export GO_QWERTY_LEARNER_RELEASE_VERSION=$(./go-qwerty-learner -v | awk 'NR==1 {print $3}')
 
 # release path, for example, go_qwerty_learner_go1.20.2_amd64_linux_v0.1.0
 export GO_QWERTY_LEARNER_RELEASE="go_qwerty_learner_${GO_QWERTY_LEARNER_RELEASE_GO_VERSION}_${GOARCH}_${GOOS}_${GO_QWERTY_LEARNER_RELEASE_VERSION}"
 
 rm -rf "$GO_QWERTY_LEARNER_RELEASE"
 mkdir "$GO_QWERTY_LEARNER_RELEASE"
-mv go_qwerty_learner "$GO_QWERTY_LEARNER_RELEASE/"
+mv go-qwerty-learner "$GO_QWERTY_LEARNER_RELEASE/"
 
 # linux release archive
 tar -zcvf "$GO_QWERTY_LEARNER_RELEASE.tar.gz" "$GO_QWERTY_LEARNER_RELEASE"
