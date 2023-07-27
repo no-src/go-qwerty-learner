@@ -19,3 +19,10 @@
 
 # Go workspace file
 go.work
+
+.idea/
+.vscode/
+bin/
+.run/
+server/dist/build
+go-qwerty-learner
