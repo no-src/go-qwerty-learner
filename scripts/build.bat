@@ -1,0 +1,12 @@
+@echo off
+
+git submodule update --init
+pushd qwerty-learner
+call yarn install
+call yarn run build
+popd
+xcopy qwerty-learner\build server\dist\build /E /Y /I
+go build
+
+echo.
+echo "go-qwerty-learner build success"
