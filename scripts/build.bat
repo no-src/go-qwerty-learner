@@ -5,7 +5,7 @@ pushd qwerty-learner
 call yarn install
 call yarn run build
 popd
-xcopy qwerty-learner\build server\dist\build /E /Y /I
+xcopy qwerty-learner\build webdist\build /E /Y /I
 go build
 
 echo.
