@@ -1,3 +1,4 @@
 [submodule "qwerty-learner"]
 	path = qwerty-learner
 	url = https://github.com/Kaiyiwing/qwerty-learner.git
+	branch = master
