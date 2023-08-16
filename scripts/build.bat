@@ -1,6 +1,6 @@
 @echo off
 
-git submodule update --init
+git submodule update --init --remote
 pushd qwerty-learner
 call yarn install
 call yarn run build

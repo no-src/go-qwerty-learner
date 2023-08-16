@@ -3,7 +3,7 @@ FROM node:latest AS web-dist
 WORKDIR /webwork
 
 COPY . .
-RUN git submodule update --init
+RUN git submodule update --init --remote
 WORKDIR /webwork/qwerty-learner
 RUN yarn install
 RUN yarn run build

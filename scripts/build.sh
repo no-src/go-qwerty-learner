@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-git submodule update --init
+git submodule update --init --remote
 cd qwerty-learner
 yarn install
 yarn run build

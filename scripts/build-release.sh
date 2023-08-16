@@ -11,7 +11,7 @@ echo -e "$(git rev-parse main)\c" >internal/version/commit
 
 ############################## build-web ##############################
 
-git submodule update --init
+git submodule update --init --remote
 cd qwerty-learner
 yarn install
 yarn run build
